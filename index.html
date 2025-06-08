@@ -1,117 +1,309 @@
-
 <!DOCTYPE html>
 <html lang="my">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AIO Hub Premium Service - Thant Zin Myo</title>
-  <meta name="description" content="Thant Zin Myo - AIO Hub Premium Service | VPN, Subscription, Digital Tools & Contact Info">
-  <meta name="keywords" content="AIO Hub, VPN, Subscription, Digital Services, Myanmar">
-  <meta name="author" content="Thant Zin Myo">
-  <link rel="icon" href="https://fav.farm/📱" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIO Hub Premium Service</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
+      font-family: 'Poppins', 'Myanmar Text', Arial, sans-serif;
+      background: #181824;
+      color: #fff;
       margin: 0;
       padding: 0;
     }
-    .container {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    header {
+      text-align: center;
+      padding: 40px 0 20px 0;
+      background: linear-gradient(90deg, #232336 60%, #181824 100%);
     }
-    h1, h2, h3 {
-      color: #004085;
+    .logo-img {
+      width: 220px;
+      max-width: 90vw;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      margin-bottom: 16px;
+      background: #fff;
+    }
+    h1 {
+      margin: 10px 0 0 0;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+    section {
+      margin: 32px auto;
+      max-width: 800px;
+      background: #232336;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      padding: 32px;
+    }
+    h2, h3 {
+      color: #f5d06f;
+      border-bottom: 2px solid #f5d06f;
+      padding-bottom: 8px;
+      margin-top: 0;
+    }
+    /* Contact Cards */
+    .contact-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 20px;
+      margin-bottom: 12px;
+    }
+    .contact-card {
+      flex: 1 1 240px;
+      background: #232336;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      padding: 18px 16px;
+      display: flex;
+      align-items: center;
+      min-width: 220px;
+      max-width: 320px;
+      transition: box-shadow 0.2s, border-color 0.2s;
+      border: 1px solid #2c2c44;
+    }
+    .contact-card:hover {
+      box-shadow: 0 6px 18px rgba(245,208,111,0.12);
+      border-color: #f5d06f;
+    }
+    .contact-card i {
+      font-size: 1.7em;
+      margin-right: 16px;
+      color: #f5d06f;
+      min-width: 32px;
       text-align: center;
     }
-    a {
-      color: #0069d9;
+    .contact-card a {
+      color: #f5d06f;
       text-decoration: none;
+      font-weight: 500;
+      word-break: break-all;
     }
-    a:hover {
-      text-decoration: underline;
+    .contact-card span {
+      color: #fff;
+      font-size: 1.04em;
+      word-break: break-all;
     }
-    ul {
-      padding-left: 1.5rem;
-    }
-    .section {
-      margin-bottom: 2rem;
-    }
-    form {
+    /* Service Cards */
+    .service-cards {
       display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 20px;
+      margin-bottom: 12px;
     }
-    input, textarea {
-      padding: 0.6rem;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+    .service-card {
+      flex: 1 1 220px;
+      background: #232336;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      padding: 20px 16px;
+      display: flex;
+      align-items: center;
+      min-width: 200px;
+      max-width: 260px;
+      transition: box-shadow 0.2s, border-color 0.2s;
+      border: 1px solid #2c2c44;
     }
-    button {
-      padding: 0.6rem;
-      background-color: #0069d9;
-      color: white;
-      font-size: 1rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
+    .service-card:hover {
+      box-shadow: 0 6px 18px rgba(245,208,111,0.12);
+      border-color: #f5d06f;
     }
-    button:hover {
-      background-color: #004b9e;
+    .service-card i {
+      font-size: 1.7em;
+      margin-right: 16px;
+      color: #f5d06f;
+      min-width: 32px;
+      text-align: center;
+    }
+    .service-card span {
+      color: #fff;
+      font-size: 1.07em;
+      font-weight: 500;
+    }
+    /* Terms List */
+    .terms-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .terms-list li {
+      background: #232336;
+      border-left: 5px solid #f5d06f;
+      margin-bottom: 18px;
+      padding: 18px 20px 18px 24px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+      font-size: 1.05em;
+      line-height: 1.7;
+      position: relative;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .terms-list li:hover {
+      box-shadow: 0 6px 18px rgba(245,208,111,0.10);
+      border-color: #ffe082;
+    }
+    .terms-note {
+      margin-top: 24px;
+      font-size: 1.08em;
+      color: #f5d06f;
+      font-weight: 600;
+      text-align: center;
+    }
+    /* Gallery */
+    .gallery-container {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+    .gallery-container img {
+      width: 180px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+      background: #232336;
+    }
+    .gallery-container img:hover {
+      transform: scale(1.05);
+    }
+    /* Download Link */
+    .download-link {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 10px 24px;
+      background: #f5d06f;
+      color: #232336;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .download-link:hover {
+      background: #ffe082;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      section { padding: 16px; }
+      .contact-cards, .service-cards, .gallery-container { flex-direction: column; }
+      .gallery-container img { width: 100%; height: auto; }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <header>
+    <img src="https://pplx-res.cloudinary.com/image/upload/v1749409651/user_uploads/47184906/66a7c679-fe94-44ec-8f35-718bf8a40615/1000169495.jpg" alt="AIO HUB PREMIUM Logo" class="logo-img" />
     <h1>AIO Hub Premium Service</h1>
-    <h2>Thant Zin Myo</h2>
+    <a href="https://pplx-res.cloudinary.com/image/upload/v1749409651/user_uploads/47184906/66a7c679-fe94-44ec-8f35-718bf8a40615/1000169495.jpg" download="aiohub-premium-logo.jpg" class="download-link">
+      ပုံကို Download လုပ်ရန်
+    </a>
+  </header>
 
-    <div class="section">
-      <h3>ဆက်သွယ်ရန်</h3>
-      <ul>
-        <li><strong>Facebook:</strong> <a href="https://www.facebook.com/share/1Bjf9oZLaM/">Profile Link</a></li>
-        <li><strong>Telegram Channel:</strong> <a href="https://t.me/AIOSsoftware">@AIOSsoftware</a></li>
-        <li><strong>Telegram Account:</strong> <a href="https://t.me/DoubleT2245">@DoubleT2245</a></li>
-        <li><strong>Phone/Viber:</strong> +95 9403715053</li>
-        <li><strong>WhatsApp:</strong> +95 9793939811</li>
-        <li><strong>LINE ID:</strong> +66 633548893</li>
-        <li><strong>Website:</strong> <a href="https://aiohubinfo.com">aiohubinfo.com</a> (အလုပ်မလုပ်သေးပါ)</li>
-      </ul>
+  <section>
+    <h2>ဆက်သွယ်ရန်</h2>
+    <div class="contact-cards">
+      <div class="contact-card">
+        <i class="fab fa-facebook"></i>
+        <a href="https://www.facebook.com/share/1Bjf9oZLaM/" target="_blank">Facebook Profile</a>
+      </div>
+      <div class="contact-card">
+        <i class="fab fa-telegram"></i>
+        <a href="https://t.me/AIOSsoftware" target="_blank">Telegram Channel<br>@AIOSsoftware</a>
+      </div>
+      <div class="contact-card">
+        <i class="fab fa-telegram-plane"></i>
+        <a href="https://t.me/DoubleT2245" target="_blank">Telegram Account<br>@DoubleT2245</a>
+      </div>
+      <div class="contact-card">
+        <i class="fas fa-phone"></i>
+        <span>Phone/Viber<br>+95 9403715053</span>
+      </div>
+      <div class="contact-card">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp<br>+95 9793939811</span>
+      </div>
+      <div class="contact-card">
+        <i class="fab fa-line"></i>
+        <span>LINE ID<br>+66 633548893</span>
+      </div>
+      <div class="contact-card">
+        <i class="fas fa-globe"></i>
+        <a href="https://aiohubinfo.com" target="_blank">aiohubinfo.com</a>
+      </div>
     </div>
+    <p>သင့်အဆင်ပြေဆုံးသောနည်းလမ်းတစ်ခုခုမှတဆင့် ဆက်သွယ်နိုင်ပါသည်။</p>
+  </section>
 
-    <div class="section">
-      <h3>ဝန်ဆောင်မှုများ</h3>
-      <ul>
-        <li>Netflix, Spotify, Canva Pro, ChatGPT Plus, Pcloud (2TB Lifetime)</li>
-        <li>VPN ဝန်ဆောင်မှုများ</li>
-        <li>Software တပ်ဆင်ခြင်း, စနစ်ချိန်ညှိခြင်း</li>
-      </ul>
+  <section>
+    <h3>ဝန်ဆောင်မှုများ</h3>
+    <div class="service-cards">
+      <div class="service-card">
+        <i class="fab fa-netflix"></i>
+        <span>Netflix Premium</span>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-shield-alt"></i>
+        <span>ExpressVPN / VPN မျိုးစုံ</span>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-shield-virus"></i>
+        <span>NortonVPN</span>
+      </div>
+      <div class="service-card">
+        <i class="fab fa-spotify"></i>
+        <span>Spotify Premium</span>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-paint-brush"></i>
+        <span>Canva Pro</span>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-robot"></i>
+        <span>ChatGPT Plus</span>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-cloud"></i>
+        <span>Pcloud</span>
+      </div>
     </div>
+    <ul style="margin-top:18px;">
+      <li>Netflix, ExpressVPN, NortonVPN, Spotify, Canva Pro, ChatGPT Plus, Pcloud, VPN မျိုးစုံ ဝန်ဆောင်မှုများကို တစ်နေရာတည်းမှ အရည်အသွေးမြင့်ဖြင့်ရယူနိုင်ပါသည်။</li>
+    </ul>
+  </section>
 
-    <div class="section">
-      <h3>အသုံးဝင်သောအကြံပြုချက်</h3>
-      <ul>
-        <li>VPN အသုံးပြု၍ လုံခြုံရေးထိန်းသိမ်းပါ</li>
-        <li>Fully Warranty Support/ ယုံကြည့်စိတ်ချစွာအားပေးနိုင်ပါတယ်</li>
-      </ul>
+  <section>
+    <h3>Terms & Conditions</h3>
+    <ul class="terms-list">
+      <li>
+        <strong>1.</strong> 30.5.2024 နေ့မနက်ပိုင်းကနေစတင်ပြီး ISP ဟုခေါ်သော WiFi, Mobile Data Provider (ကိုယ်ယူထားသည့် WiFi လိုင်း၊ သုံးနေသည့် Mobile Data) များမှ VPN များသုံးမရစေရန် VPN server IP များကို Ban ခြင်း၊ VPN များအလုပ်လုပ်သည့် Protocol များကို Ban ခြင်း၊ လိုင်းများနှေးအောင်လုပ်ခြင်းများကို လက်ရှိအချိန်အထိလုပ်ထားပါတယ်။
+      </li>
+      <li>
+        <strong>2.</strong> ကျွန်တော်လက်ရှိရောင်းနေတဲ့ Express VPN မှာလည်း လက်ရှိမှာ WiFi, Mobile, Data တော်တော်များများနှင့်ချိတ်ဆက်လို့ရနေပေမဲ့ ISP : [WiFi or Mobile data Provider] : Ban အသုံးပြုလို့ရတော့မည်မဟုတ်ပါ။
+      </li>
+      <li>
+        <strong>3.</strong> ထိုသို့ဆက်သုံးလို့မရတော့ခြင်းနှင့် လိုင်းနှေးခြင်း၊ ခဏခဏပြန်ချိတ်ရခြင်းများသည် VPN ဝယ်သုံးတာမသုံးတာနှင့်မသက်ဆိုင်သလို VPN များကြောင့်ဖြစ်နေခြင်းလည်းမဟုတ်ပါ။ အဲ့လိုပြဿနာများအား ကျွန်တော့်ဘက်က ငွေပြန်အမ်းခြင်း [Refund] လုံးဝလုပ်မည်မဟုတ်ပါ။
+      </li>
+    </ul>
+    <div class="terms-note">
+      ဝယ်ယူပြီးပါက အထက်ပါအချက်များအား လက်ခံသည်ဟုယူဆပါသည်။
     </div>
+  </section>
 
-    <div class="section">
-      <h3>Contact Form</h3>
-      <form name="contact" method="POST" data-netlify="true">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" rows="4" placeholder="Message..." required></textarea>
-        <button type="submit">Send</button>
-      </form>
+  <section>
+    <h3>Photo Gallery</h3>
+    <div class="gallery-container">
+      <img src="https://pplx-res.cloudinary.com/image/upload/v1749409651/user_uploads/47184906/66a7c679-fe94-44ec-8f35-718bf8a40615/1000169495.jpg" alt="AIO HUB PREMIUM Logo" />
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Sample Photo 1" />
+      <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Sample Photo 2" />
     </div>
-  </div>
+  </section>
 </body>
 </html>
