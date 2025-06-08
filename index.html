@@ -47,49 +47,6 @@
       padding-bottom: 8px;
       margin-top: 0;
     }
-    /* Contact Cards */
-    .contact-cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin-top: 20px;
-      margin-bottom: 12px;
-    }
-    .contact-card {
-      flex: 1 1 240px;
-      background: #232336;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-      padding: 18px 16px;
-      display: flex;
-      align-items: center;
-      min-width: 220px;
-      max-width: 320px;
-      transition: box-shadow 0.2s, border-color 0.2s;
-      border: 1px solid #2c2c44;
-    }
-    .contact-card:hover {
-      box-shadow: 0 6px 18px rgba(245,208,111,0.12);
-      border-color: #f5d06f;
-    }
-    .contact-card i {
-      font-size: 1.7em;
-      margin-right: 16px;
-      color: #f5d06f;
-      min-width: 32px;
-      text-align: center;
-    }
-    .contact-card a {
-      color: #f5d06f;
-      text-decoration: none;
-      font-weight: 500;
-      word-break: break-all;
-    }
-    .contact-card span {
-      color: #fff;
-      font-size: 1.04em;
-      word-break: break-all;
-    }
     /* Service Cards */
     .service-cards {
       display: flex;
@@ -175,6 +132,49 @@
     .gallery-container img:hover {
       transform: scale(1.05);
     }
+    /* Contact Cards */
+    .contact-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 20px;
+      margin-bottom: 12px;
+    }
+    .contact-card {
+      flex: 1 1 240px;
+      background: #232336;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      padding: 18px 16px;
+      display: flex;
+      align-items: center;
+      min-width: 220px;
+      max-width: 320px;
+      transition: box-shadow 0.2s, border-color 0.2s;
+      border: 1px solid #2c2c44;
+    }
+    .contact-card:hover {
+      box-shadow: 0 6px 18px rgba(245,208,111,0.12);
+      border-color: #f5d06f;
+    }
+    .contact-card i {
+      font-size: 1.7em;
+      margin-right: 16px;
+      color: #f5d06f;
+      min-width: 32px;
+      text-align: center;
+    }
+    .contact-card a {
+      color: #f5d06f;
+      text-decoration: none;
+      font-weight: 500;
+      word-break: break-all;
+    }
+    .contact-card span {
+      color: #fff;
+      font-size: 1.04em;
+      word-break: break-all;
+    }
     /* Download Link */
     .download-link {
       display: inline-block;
@@ -193,7 +193,7 @@
     /* Responsive */
     @media (max-width: 600px) {
       section { padding: 16px; }
-      .contact-cards, .service-cards, .gallery-container { flex-direction: column; }
+      .service-cards, .contact-cards, .gallery-container { flex-direction: column; }
       .gallery-container img { width: 100%; height: auto; }
     }
   </style>
@@ -207,41 +207,7 @@
     </a>
   </header>
 
-  <section>
-    <h2>ဆက်သွယ်ရန်</h2>
-    <div class="contact-cards">
-      <div class="contact-card">
-        <i class="fab fa-facebook"></i>
-        <a href="https://www.facebook.com/share/1Bjf9oZLaM/" target="_blank">Facebook Profile</a>
-      </div>
-      <div class="contact-card">
-        <i class="fab fa-telegram"></i>
-        <a href="https://t.me/AIOSsoftware" target="_blank">Telegram Channel<br>@AIOSsoftware</a>
-      </div>
-      <div class="contact-card">
-        <i class="fab fa-telegram-plane"></i>
-        <a href="https://t.me/DoubleT2245" target="_blank">Telegram Account<br>@DoubleT2245</a>
-      </div>
-      <div class="contact-card">
-        <i class="fas fa-phone"></i>
-        <span>Phone/Viber<br>+95 9403715053</span>
-      </div>
-      <div class="contact-card">
-        <i class="fab fa-whatsapp"></i>
-        <span>WhatsApp<br>+95 9793939811</span>
-      </div>
-      <div class="contact-card">
-        <i class="fab fa-line"></i>
-        <span>LINE ID<br>+66 633548893</span>
-      </div>
-      <div class="contact-card">
-        <i class="fas fa-globe"></i>
-        <a href="https://aiohubinfo.com" target="_blank">aiohubinfo.com</a>
-      </div>
-    </div>
-    <p>သင့်အဆင်ပြေဆုံးသောနည်းလမ်းတစ်ခုခုမှတဆင့် ဆက်သွယ်နိုင်ပါသည်။</p>
-  </section>
-
+  <!-- ဝန်ဆောင်မှုများ အပေါ်သို့ -->
   <section>
     <h3>ဝန်ဆောင်မှုများ</h3>
     <div class="service-cards">
@@ -304,6 +270,42 @@
       <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Sample Photo 1" />
       <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Sample Photo 2" />
     </div>
+  </section>
+
+  <!-- ဆက်သွယ်ရန် အောက်သို့ -->
+  <section>
+    <h2>ဆက်သွယ်ရန်</h2>
+    <div class="contact-cards">
+      <div class="contact-card">
+        <i class="fab fa-facebook"></i>
+        <a href="https://www.facebook.com/share/1Bjf9oZLaM/" target="_blank">Facebook Profile</a>
+      </div>
+      <div class="contact-card">
+        <i class="fab fa-telegram"></i>
+        <a href="https://t.me/AIOSsoftware" target="_blank">Telegram Channel<br>@AIOSsoftware</a>
+      </div>
+      <div class="contact-card">
+        <i class="fab fa-telegram-plane"></i>
+        <a href="https://t.me/DoubleT2245" target="_blank">Telegram Account<br>@DoubleT2245</a>
+      </div>
+      <div class="contact-card">
+        <i class="fas fa-phone"></i>
+        <span>Phone/Viber<br>+95 9403715053</span>
+      </div>
+      <div class="contact-card">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp<br>+95 9793939811</span>
+      </div>
+      <div class="contact-card">
+        <i class="fab fa-line"></i>
+        <span>LINE ID<br>+66 633548893</span>
+      </div>
+      <div class="contact-card">
+        <i class="fas fa-globe"></i>
+        <a href="https://aiohubinfo.com" target="_blank">aiohubinfo.com</a>
+      </div>
+    </div>
+    <p>သင့်အဆင်ပြေဆုံးသောနည်းလမ်းတစ်ခုခုမှတဆင့် ဆက်သွယ်နိုင်ပါသည်။</p>
   </section>
 </body>
 </html>
