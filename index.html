@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="my">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AIO Hub Premium Service Myanmar</title>
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet" />
   <!-- Font Awesome 5.15.1 CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
   <style>
     body {
       font-family: 'Poppins', 'Myanmar Text', Arial, sans-serif;
@@ -73,9 +73,12 @@
       border: 1px solid #2c2c44;
       transition: box-shadow 0.2s, border-color 0.2s;
       text-align: center;
+      text-decoration: none;
+      color: inherit;
     }
     .service-card i,
-    .service-card img.netflix-logo {
+    .service-card img.netflix-logo,
+    .service-card img.game-logo {
       font-size: 2em;
       margin-bottom: 10px;
       color: #f5d06f;
@@ -89,6 +92,16 @@
       border-radius: 6px;
       background: #000;
       object-fit: contain;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .service-card img.game-logo {
+      width: 64px;
+      height: 64px;
+      border-radius: 8px;
+      background: #000;
+      object-fit: contain;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
       margin-left: auto;
       margin-right: auto;
     }
@@ -305,7 +318,7 @@
     <h3>ဝန်ဆောင်မှုများ</h3>
     <div class="service-cards">
       <div class="service-card">
-        <img src="https://pngimg.com/uploads/netflix/netflix_PNG15.png" alt="Netflix" class="netflix-logo">
+        <img src="https://pngimg.com/uploads/netflix/netflix_PNG15.png" alt="Netflix" class="netflix-logo" />
         <span>Netflix Premium</span>
       </div>
       <div class="service-card">
@@ -350,38 +363,62 @@
       </div>
     </div>
     <ul style="margin-top:18px; text-align:center;">
-      <li>Telegram Premium GiftLink,Google Drive,Netflix, Let's VPN, Express VPN, Norton VPN, Spotify, Canva Pro, ChatGPT Plus, Pcloud, VPN မျိုးစုံ ဝန်ဆောင်မှုများကို တစ်နေရာတည်းမှာဝယ်ယူရရှိနိုင်ပါပြီရှင့်။။</li>
+      <li>Telegram Premium GiftLink, Google Drive, Netflix, Let's VPN, Express VPN, Norton VPN, Spotify, Canva Pro, ChatGPT Plus, Pcloud, VPN မျိုးစုံ ဝန်ဆောင်မှုများကို တစ်နေရာတည်းမှာဝယ်ယူရရှိနိုင်ပါပြီရှင့်။</li>
     </ul>
   </section>
+
+  <!-- Game Products Section with Links and Custom Logos -->
+  <section>
+    <h3>Products & Game Downloads</h3>
+    <div class="service-cards" style="justify-content:center;">
+      <a href="https://www.ea.com/games/command-and-conquer" target="_blank" rel="noopener noreferrer" class="service-card" style="max-width: 180px;">
+        <img src="https://seeklogo.com/images/C/command-conquer-generals-logo-33624E0B4A-seeklogo.com.png" alt="General Logo" class="game-logo" />
+        <span>General</span>
+      </a>
+      <a href="https://c-and-c-generals-zero-hour.en.softonic.com/download" target="_blank" rel="noopener noreferrer" class="service-card" style="max-width: 180px;">
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/7b/Command_and_Conquer_Generals_Zero_Hour_logo.png" alt="General Zero Hour Logo" class="game-logo" />
+        <span>General Zero Hour</span>
+      </a>
+      <a href="https://command-conquer-generals-zero-hour-reborn-mod.en.download.it" target="_blank" rel="noopener noreferrer" class="service-card" style="max-width: 180px;">
+        <img src="https://cncnz.com/wp-content/uploads/2020/12/Generals-Reborn-Logo.png" alt="General Reborn Logo" class="game-logo" />
+        <span>General Reborn</span>
+      </a>
+      <a href="https://www.youtube.com/watch?v=EtZGhbfTUMo" target="_blank" rel="noopener noreferrer" class="service-card" style="max-width: 180px;">
+        <img src="https://cncnz.com/wp-content/uploads/2020/12/Generals-Reborn-Logo.png" alt="General Reborn 08 Logo" class="game-logo" />
+        <span>General Reborn 08</span>
+      </a>
+      <a href="https://legi.cc/downloads/genpatcher/" target="_blank" rel="noopener noreferrer" class="service-card" style="max-width: 180px;">
+        <i class="fas fa-gamepad" style="font-size: 2em; color: #f5d06f; margin-bottom: 10px;"></i>
+        <span>Gen Luncher</span>
+      </a>
+      <a href="https://sites.google.com/view/aiohubpremium/generals" target="_blank" rel="noopener noreferrer" class="service-card" style="max-width: 180px;">
+        <i class="fas fa-map" style="font-size: 2em; color: #f5d06f; margin-bottom: 10px;"></i>
+        <span>Maps Pack</span>
+      </a>
+    </div>
+  </section>
+
   <section class="payment-section">
     <h2>ငွေပေးချေမှုများ (Payment Methods)</h2>
     <div class="payment-cards">
         <div class="payment-card">
-            
             <span class="payment-name">KPay</span>
             <span class="account-info">09403715053 (Thant Zin Myo Thant)</span>
-            </div>
-
+        </div>
         <div class="payment-card">
-           
             <span class="payment-name">TrueMoney</span>
             <span class="account-info">0633548893 (Thant Zin Myo Thant)</span>
         </div>
-
         <div class="payment-card">
-           
             <span class="payment-name">PayPal</span>
-            <span class="account-info"> UserName - @aiohubythantzinmyo</span>
+            <span class="account-info">UserName - @aiohubythantzinmyo</span>
         </div>
-
         <div class="payment-card">
-            
             <span class="payment-name">Binance Pay</span>
             <span class="account-info">Binance ID: 503728763</span>
-            
         </div>
     </div>
-</section>
+  </section>
 
   <section>
     <h3>Terms & Conditions</h3>
@@ -405,7 +442,6 @@
     <h3>Photo Gallery</h3>
     <div class="gallery-container">
       <img src="https://pplx-res.cloudinary.com/image/upload/v1749409651/user_uploads/47184906/66a7c679-fe94-44ec-8f35-718bf8a40615/1000169495.jpg" alt="AIO HUB PREMIUM Logo" />
-      
     </div>
   </section>
 
@@ -414,37 +450,42 @@
     <div class="contact-cards">
       <div class="contact-card">
         <i class="fab fa-facebook"></i>
-        <a href="https://www.facebook.com/share/1Bjf9oZLaM/" target="_blank">Facebook Profile</a>
+        <a href="https://www.facebook.com/share/1Bjf9oZLaM/" target="_blank" rel="noopener noreferrer">Facebook Profile</a>
       </div>
       <div class="contact-card">
         <i class="fab fa-telegram"></i>
-        <a href="https://t.me/aiohubpsm" target="_blank">Telegram Channel<br>@AIOSsoftware</a>
+        <a href="https://t.me/aiohubpsm" target="_blank" rel="noopener noreferrer">Telegram Channel<br />@AIOHUBPSM</a>
       </div>
       <div class="contact-card">
         <i class="fab fa-telegram-plane"></i>
-        <a href="https://t.me/DoubleT2245" target="_blank">Telegram Account<br>@DoubleT2245</a>
+        <a href="https://t.me/DoubleT2245" target="_blank" rel="noopener noreferrer">Telegram Account<br />@DoubleT2245</a>
       </div>
       <div class="contact-card">
         <i class="fas fa-phone"></i>
-        <span>Phone/Viber<br>+959403715053/+66633548893</span>
+        <span>Phone/Viber<br />+959403715053/+66633548893</span>
       </div>
       <div class="contact-card">
         <i class="fab fa-whatsapp"></i>
-        <span>WhatsApp<br>+95 9793939811</span>
+        <span>WhatsApp<br />+95 9793939811</span>
       </div>
       <div class="contact-card">
         <i class="fab fa-line"></i>
-        <span>LINE ID<br>+66 633548893</span>
+        <span>LINE ID<br />+66 633548893</span>
       </div>
       <div class="contact-card">
         <i class="fas fa-globe"></i>
-        <a href="https://aiohubinfo.com" target="_blank">aiohubinfo.com</a>
+        <a href="https://aiohubinfo.com" target="_blank" rel="noopener noreferrer">aiohubinfo.com</a>
       </div>
       <div class="contact-card">
         <i class="fas fa-globe"></i>
-        <a href="https://sites.google.com/view/aiohubpremium/generals" target="_blank"> Generals,Zero Hour,Reborn 08, Maps Pack, Mod Download </a>
+        <a href="https://sites.google.com/view/aiohubpremium/generals" target="_blank" rel="noopener noreferrer">
+          Generals,Zero Hour,Reborn 08, Maps Pack, Mod Download
+        </a>
+      </div>
     </div>
-    <p>AIO Hub Premium Service Myanmar မှာရောင်းချသော Products တွေကုန်လုံးမှာ Full Warranty Support ပေးထားပါတယ်ရှင့် Error တစ်ခုခုတက်ခဲ့ရင် Replacement or Refund ပြန်လုပ်ပေးပါတယ်ရှင့်၊ Refund ကတော့လအလိုက်ပြန်တွက်ချက်ပြီးပြန်ပေးပေးပါတယ်ရှင့်။</p>
+    <p>
+      AIO Hub Premium Service Myanmar မှာရောင်းချသော Products တွေကုန်လုံးမှာ Full Warranty Support ပေးထားပါတယ်ရှင့် Error တစ်ခုခုတက်ခဲ့ရင် Replacement or Refund ပြန်လုပ်ပေးပါတယ်ရှင့်၊ Refund ကတော့လအလိုက်ပြန်တွက်ချက်ပြီးပြန်ပေးပေးပါတယ်ရှင့်။
+    </p>
   </section>
 </body>
 </html>
